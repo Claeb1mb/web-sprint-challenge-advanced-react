@@ -8,9 +8,9 @@ test("form header renders", () => {
   //Arrange
   const { getByText } = render(<CheckoutForm />);
   //Act
-  const linkElement = getByText(/Checkout Form/i);
+  const header = getByText(/Checkout Form/i);
   //Assert
-  expect(greeting).toBeInTheDocument();
+  expect(header).toBeInTheDocument();
 });
 
 test("form shows success message on submit with form details", () => {
