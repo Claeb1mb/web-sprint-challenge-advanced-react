@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const port = 8777;
+const port = 8333;
 
 const server = express();
 server.use(bodyParser.json());
