@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "../hooks/useForm";
 
 const initialValue = {
@@ -14,10 +14,9 @@ const initialValue = {
 // Build out the logic needed for a form custom hook (see the useForm.js file)
 // and replace the necessary stateful logic from CheckoutForm with the hook
 export default function CheckoutForm() {
-  const [showSuccessMessage, values, handleChanges, handleSubmit] = useForm(
+  const [handleChanges, handleSubmit, values, showSuccessMessage] = useForm(
     "checkoutForm",
-    initialValue,
-    showSuccessMessage
+    initialValue
   );
 
   return (
